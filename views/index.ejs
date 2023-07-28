@@ -1,0 +1,36 @@
+<%- include ("partials/header.ejs") %> 
+
+
+<form class="tdl-t row row-cols-lg-auto g-3 align-items-center justify-content-center" action="/submit" method="POST">
+  <div class="col-12">
+    <label class="visually-hidden" for="inlineFormInputGroupUsername">Write task here.</label>
+    <div class="input-group my-5">
+      <div class="input-group-text tdl-t">To-do</div>
+      <input name="tasks" type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Write task here">
+    </div>
+  </div>
+
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Add</button>
+  </div>
+</form>
+
+<div class = "form">
+  <form class ="mt">
+    <% if (locals.task_array) { %>
+      <% for(let index = 0; index < task_array.length; index++ ) { %>
+        <input class = "listformat $font-family-base" type="checkbox" id="vehicle<%=index%>" name="vehicle<%= index %>" value="Bike">
+        <label class = "listformat $font-family-base" for="vehicle<%=index%>"> <%= task_array[index]%> </label><br>
+        <% } %>
+    <% } %>  
+  </form>
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="/script.js" charset="utf-8"></script>
+
+<%- include ("partials/footer.ejs") %>

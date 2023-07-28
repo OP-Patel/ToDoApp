@@ -1,0 +1,45 @@
+#tdl-t{
+    font-family: 'Victor Mono', monospace;
+}
+
+#tdl{
+    justify-content: space-evenly;
+}
+
+.hb{
+    font-family: 'Victor Mono', monospace;
+    text-decoration: none;
+    text-shadow: 50%;
+    color: black;
+}
+
+.text{
+    font-family: 'Victor Mono', monospace;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+.listformat{
+    color: gray;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    accent-color: black; 
+
+}
+
+.form{
+    display: block;
+    text-align: center;
+}
+.mt{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+input:checked {
+    outline: none;
+}
