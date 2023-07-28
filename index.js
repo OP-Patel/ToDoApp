@@ -5,7 +5,7 @@ const app = express();
 const port = 3000; 
 
 var all_tasks = []; 
-var all_tasks1 = ["hel"]; 
+var all_tasks1 = []; 
 
 app.use(express.static("public")); 
 app.use(bodyParser.urlencoded({ extended: true }));
